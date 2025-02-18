@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="form mt-5">
+        <div class="row justify-content-center m-auto align-content-center mt-5">
+            <div class="col-8 justify-content-center text-center">
+                <h1>login</h1>
+                <form id="login-form">
+                    <div class="nameform">
+                        <label for="name">Username</label>
+                        <input type="text" name="name" id="name">
+                        <small>invalid input</small>
+                    </div>
+                    <div class="passwordform">
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password">
+                        <small>invalid input</small>
+                    </div>
+                    <button id="previous" class="p-2">previous</button>
+                    <button id="next" class="p-2">next</button>
+                    <input class="p-2 m-3" type="submit" id="submit">
+                    <h1 id="congrats">you successfuly signed in !</h1>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+
+</html>

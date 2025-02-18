@@ -1,0 +1,44 @@
+form {
+  .nameform {
+  }
+  .nameform-error {
+    small {
+      visibility: visible;
+    }
+  }
+  .nameform-success {
+    display: none;
+    small {
+      visibility: hidden;
+    }
+  }
+  .passwordform {
+    visibility: hidden;
+  }
+  .passwordform-error {
+    small {
+      visibility: visible;
+    }
+  }
+  .passwordform-success {
+    display: none;
+    small {
+      visibility: hidden;
+    }
+  }
+  small {
+    color: red;
+    visibility: hidden;
+  }
+  #previous {
+    visibility: hidden;
+  }
+  #submit {
+    visibility: hidden;
+  }
+  #congrats {
+    font-weight: bold;
+    color: green;
+    visibility: hidden;
+  }
+}

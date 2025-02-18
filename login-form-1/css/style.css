@@ -1,0 +1,36 @@
+form .nameform-error small {
+  visibility: visible;
+}
+form .nameform-success {
+  display: none;
+}
+form .nameform-success small {
+  visibility: hidden;
+}
+form .passwordform {
+  visibility: hidden;
+}
+form .passwordform-error small {
+  visibility: visible;
+}
+form .passwordform-success {
+  display: none;
+}
+form .passwordform-success small {
+  visibility: hidden;
+}
+form small {
+  color: red;
+  visibility: hidden;
+}
+form #previous {
+  visibility: hidden;
+}
+form #submit {
+  visibility: hidden;
+}
+form #congrats {
+  font-weight: bold;
+  color: green;
+  visibility: hidden;
+}/*# sourceMappingURL=style.css.map */
