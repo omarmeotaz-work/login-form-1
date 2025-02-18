@@ -1,3 +1,12 @@
+.form-container {
+  border-radius: 14px;
+}
+
+form .nameform-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 form .nameform-error small {
   visibility: visible;
 }
@@ -9,6 +18,12 @@ form .nameform-success small {
 }
 form .passwordform {
   visibility: hidden;
+  height: 0;
+}
+form .passwordform-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 form .passwordform-error small {
   visibility: visible;

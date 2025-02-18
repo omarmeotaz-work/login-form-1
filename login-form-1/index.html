@@ -16,19 +16,23 @@
 </head>
 
 <body>
-    <div class="form mt-5 ">
+    <div class="form mt-5">
         <div class="row justify-content-center m-auto align-content-center mt-5">
-            <div class="col-8 justify-content-center text-center">
-                <h1>login</h1>
+            <div
+                class="form-container col-8 justify-content-center text-center border border-secondary m-5 p-5 shadow p-3 mb-5 bg-body rounded">
+                <h1 class="m-3">login</h1>
                 <form id="login-form">
-                    <div class="nameform">
-                        <label for="name">Username</label>
-                        <input type="text" name="name" id="name">
+                    <div class="nameform d-flex flex-column gap-2">
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname" class="m-auto">
+                        <small>invalid input</small>
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" class="m-auto">
                         <small>invalid input</small>
                     </div>
-                    <div class="passwordform">
+                    <div class="passwordform d-flex flex-column gap-2">
                         <label for="password">Password</label>
-                        <input type="text" name="password" id="password">
+                        <input type="text" name="password" id="password" class="m-auto">
                         <small>invalid input</small>
                     </div>
                     <button id="previous" class="p-2">previous</button>
