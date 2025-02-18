@@ -16,35 +16,58 @@ form .nameform-success {
 form .nameform-success small {
   visibility: hidden;
 }
-form .passwordform {
-  visibility: hidden;
-  height: 0;
-}
-form .passwordform-error {
+
+.Lnameform-error {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-form .passwordform-error small {
+.Lnameform-error small {
   visibility: visible;
 }
-form .passwordform-success {
+
+.Lnameform-success {
   display: none;
 }
-form .passwordform-success small {
+.Lnameform-success small {
   visibility: hidden;
 }
-form small {
+
+.passwordform {
+  visibility: hidden;
+  height: 0;
+}
+
+.passwordform-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.passwordform-error small {
+  visibility: visible;
+}
+
+.passwordform-success {
+  display: none;
+}
+.passwordform-success small {
+  visibility: hidden;
+}
+
+small {
   color: red;
   visibility: hidden;
 }
-form #previous {
+
+#previous {
   visibility: hidden;
 }
-form #submit {
+
+#submit {
   visibility: hidden;
 }
-form #congrats {
+
+#congrats {
   font-weight: bold;
   color: green;
   visibility: hidden;

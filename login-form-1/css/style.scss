@@ -2,8 +2,6 @@
   border-radius: 14px;
 }
 form {
-  .nameform {
-  }
   .nameform-error {
     display: flex;
     flex-direction: column;
@@ -18,37 +16,51 @@ form {
       visibility: hidden;
     }
   }
-  .passwordform {
-    visibility: hidden;
-    height: 0;
-  }
-  .passwordform-error {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    small {
-      visibility: visible;
-    }
-  }
-  .passwordform-success {
-    display: none;
-    small {
-      visibility: hidden;
-    }
-  }
+}
+.Lnameform-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   small {
-    color: red;
+    visibility: visible;
+  }
+}
+.Lnameform-success {
+  display: none;
+  small {
     visibility: hidden;
   }
-  #previous {
+}
+.passwordform {
+  visibility: hidden;
+  height: 0;
+}
+.passwordform-error {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  small {
+    visibility: visible;
+  }
+}
+.passwordform-success {
+  display: none;
+  small {
     visibility: hidden;
   }
-  #submit {
-    visibility: hidden;
-  }
-  #congrats {
-    font-weight: bold;
-    color: green;
-    visibility: hidden;
-  }
+}
+small {
+  color: red;
+  visibility: hidden;
+}
+#previous {
+  visibility: hidden;
+}
+#submit {
+  visibility: hidden;
+}
+#congrats {
+  font-weight: bold;
+  color: green;
+  visibility: hidden;
 }

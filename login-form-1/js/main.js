@@ -5,15 +5,23 @@ const submit = document.getElementById("submit");
 const next = document.getElementById("next");
 const previous = document.getElementById("previous");
 const congrats = document.getElementById("congrats");
-const n = firstName.parentElement;
-
+const fn = firstName.parentElement;
+const ln = lastName.parentElement;
 const p = password.parentElement;
 
-function nameCheck(input, input2) {
-  if (input.value.length < 3 || input2.value.length < 3) {
-    n.className = "nameform-error";
+function NameCheck(input, input2) {
+  if (input.value.length < 3 && input2.value.length < 3) {
+    fn.className = "nameform-error";
+    ln.className = "Lnameform-error";
+  } else if (input.value.length < 3) {
+    ln.className = "lnameform d-flex flex-column gap-2";
+    fn.className = "nameform-error";
+  } else if (input2.value.length < 3) {
+    ln.className = "Lnameform-error";
+    fn.className = "nameform d-flex flex-column gap-2";
   } else {
-    n.className = "nameform-success";
+    fn.className = "nameform-success";
+    ln.className = "Lnameform-success";
     p.style.visibility = "visible";
     p.style.height = "auto";
     previous.style.visibility = "visible";
@@ -21,6 +29,7 @@ function nameCheck(input, input2) {
     submit.style.visibility = "visible";
   }
 }
+
 function passCheck(input) {
   const formControl = input.parentElement;
   if (input.value.length < 6) {
@@ -35,12 +44,13 @@ function passCheck(input) {
 
 next.addEventListener("click", function (e) {
   e.preventDefault();
-  nameCheck(firstName, lastName);
+  NameCheck(firstName, lastName);
 });
 
 previous.addEventListener("click", function (e) {
   e.preventDefault();
-  n.className = "nameform d-flex flex-column gap-2";
+  fn.className = "nameform d-flex flex-column gap-2";
+  ln.className = "lnameform d-flex flex-column gap-2";
   p.style.visibility = "hidden";
   previous.style.visibility = "hidden";
   next.style.visibility = "visible";
